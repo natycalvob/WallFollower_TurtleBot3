@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="realrobot_pkg" type="call_find_wall_service_client.py" name="call_move_nearest_wall" output="screen">
+    </node>
+</launch>

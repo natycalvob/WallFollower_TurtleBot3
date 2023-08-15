@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="realrobot_pkg" type="action_server_record_odom.py" name="record_odom_node" output="screen">
+    </node>
+
+    <node pkg="realrobot_pkg" type="find_wall_service_server.py" name="service_move_nearest_wall" output="screen">
+    </node>
+
+    <node pkg="realrobot_pkg" type="following_wall_action_client_class.py" name="drive_along_wall" output="screen">
+    </node>
+</launch>
